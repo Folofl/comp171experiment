@@ -8,8 +8,6 @@
 
 <svg id="canvas">
     <svg id="topbar_svg"><rect id="topbar"></rect></svg>
-    <svg id="button_BL"></svg>
-    <svg id="button_BR"></svg> 
     <foreignObject id="text_box">
         <br>
         <h3>Please provide the following:</h3>
@@ -162,11 +160,7 @@
             </form>
         </center>
     </foreignObject>
-    <!-- <svg id="button_C"></svg>  -->
     <svg><rect id="botbar"></rect></svg>
-    <svg id="button_TL"></svg>
-    <svg id="button_TC"></svg> 
-    <svg id="button_TR"></svg> 
 </svg>
 <svg id="memo" style="float: right">
     <foreignObject id="memo_box">
@@ -312,52 +306,6 @@
             .style('fill',  bar_color);
         ///////////////////////////////////////////////////
 
-        ////////////// top left bar button ////////////////
-        // var button_BL = d3.select("#button_BL")
-        //     .attr('x',      BB_x_pos_L)
-        //     .attr('width',  BB_width)
-        //     .attr('height', BB_height)
-        //     .on  ('click', function () {
-        //            // This loads a new html page
-        //            window.location.href = prev_screen;
-        //     });
-        // button_BL.append("rect")
-        //          .attr('height', BB_height)
-        //          .attr('width',  BB_width)
-        //          .attr('fill', button_color);
-        // button_BL.append("text")
-        //          .attr('x', BB_width  / 2)
-        //          .attr('y', BB_height / 2)
-        //          .text(BB_L_text)
-        //          .attr('text-anchor', 'middle')
-        //          .attr('alignment-baseline', 'central')
-        //          .attr('fill',      B_font_color)
-        //          .attr('font-size', B_font_size);
-        ///////////////////////////////////////////////////
-
-        ////////////// top right bar button ///////////////
-        // var button_BR = d3.select("#button_BR")
-        //     .attr('x',      BB_x_pos_R)
-        //     .attr('width',  BB_width)
-        //     .attr('height', BB_height)
-        //     .on  ('click', function () {
-        //            // This loads a new html page
-        //            window.location.href = next_screen;
-        //     });
-        // button_BR.append("rect")
-        //          .attr('height', BB_height)
-        //          .attr('width',  BB_width)
-        //          .attr('fill', button_color);
-        // button_BR.append("text")
-        //          .attr('x', BB_width  / 2)
-        //          .attr('y', BB_height / 2)
-        //          .text(BB_R_text)
-        //          .attr('text-anchor', 'middle')
-        //          .attr('alignment-baseline', 'central')
-        //          .attr('fill',      B_font_color)
-        //          .attr('font-size', B_font_size);
-        ///////////////////////////////////////////////////
-
         ////////////// wide centered button ///////////////
         var button_C = d3.select("#button_C")
                          .attr('x',      CB_x_pos)
@@ -379,84 +327,6 @@
                 .attr('alignment-baseline', 'central')
                 .attr('fill',      B_font_color)
                 .attr('font-size', B_font_size);
-        ///////////////////////////////////////////////////
-
-        ////////////// bot left tab button ////////////////
-        // var button_TL = d3.select("#button_TL")
-        //     .attr('x',      TB_x_pos_L)
-        //     .attr('y',      TB_y_pos)
-        //     .attr('width',  TB_width)
-        //     .attr('height', TB_height)
-        //     .on  ('click', function () {
-        //            // This loads a new html page
-        //            window.location.href = tab_L;
-        //     });
-        // button_TL.append("rect")
-        //          .attr('height', TB_height)
-        //          .attr('width',  TB_width)
-        //          .attr('stroke', B_line_color)
-        //          .attr('stroke-width', 1)
-        //          .attr('fill', button_color);
-        // button_TL.append("text")
-        //          .attr('x', TB_width  / 2)
-        //          .attr('y', TB_height / 2)
-        //          .text(TB_L_text)
-        //          .attr('text-anchor', 'middle')
-        //          .attr('alignment-baseline', 'central')
-        //          .attr('fill',      B_font_color)
-        //          .attr('font-size', B_font_size);
-        ///////////////////////////////////////////////////
-
-        ///////////// bot middle tab button ///////////////
-        // var button_TC = d3.select("#button_TC")
-        //     .attr('x',      TB_x_pos_C)
-        //     .attr('y',      TB_y_pos)
-        //     .attr('width',  TB_width)
-        //     .attr('height', TB_height)
-        //     .on  ('click', function () {
-        //            // This loads a new html page
-        //            window.location.href = tab_C;
-        //     });
-        // button_TC.append("rect")
-        //          .attr('height', TB_height)
-        //          .attr('width',  TB_width)
-        //          .attr('stroke', button_color)
-        //          .attr('stroke-width', 1)
-        //          .attr('fill', B_font_color);
-        // button_TC.append("text")
-        //          .attr('x', TB_width  / 2)
-        //          .attr('y', TB_height / 2)
-        //          .text(TB_C_text)
-        //          .attr('text-anchor', 'middle')
-        //          .attr('alignment-baseline', 'central')
-        //          .attr('fill',      button_color)
-        //          .attr('font-size', B_font_size);
-        ///////////////////////////////////////////////////
-
-        ////////////// bot right tab button ///////////////
-        // var button_TR = d3.select("#button_TR")
-        //     .attr('x',      TB_x_pos_R)
-        //     .attr('y',      TB_y_pos)
-        //     .attr('width',  TB_width)
-        //     .attr('height', TB_height)
-        //     .on  ('click', function () {
-        //            // This loads a new html page
-        //            window.location.href = tab_R;
-        //     });
-        // button_TR.append("rect")
-        //          .attr('height', TB_height)
-        //          .attr('width',  TB_width)
-        //          .attr('stroke', B_line_color)
-        //          .attr('stroke-width', 1)
-        //          .attr('fill', button_color);
-        // button_TR.append("text")
-        //          .attr('x', TB_width  / 2)
-        //          .attr('y', TB_height / 2)
-        //          .text(TB_R_text)
-        //          .attr('text-anchor', 'middle')
-        //          .attr('alignment-baseline', 'central')
-        //          .attr('fill',      B_font_color)
-        //          .attr('font-size', B_font_size);
         ///////////////////////////////////////////////////
 
         ////////////// centered entry form ////////////////
