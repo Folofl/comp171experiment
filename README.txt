@@ -1,0 +1,10 @@
+    Comp171 Assignment 8,9
+    By: aboris01 and mrice03
+===================================================================================
+
+How to run this:
+    1. Download/unzip attachment
+    2. Open terminal and cd to folder containing the files
+    3. Run     python -m SimpleHTTPServer     in the terminal
+    4. Open http://localhost:8000/scenarios.html in Chrome (won’t work in Safari)
+    5. Tap through scenarios
